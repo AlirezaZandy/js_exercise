@@ -1,0 +1,187 @@
+/* functional */
+.audio-track {
+  width: 75%;
+  height: 10px;
+  background-color: #d3cd96aa;
+  margin: 20px 0;
+  border-radius: 2px;
+}
+
+/* general */
+.time {
+  width: 0;
+  height: 10px;
+  background-color: #d45695;
+  pointer-events: none;
+  border-radius: 2px;
+}
+
+body {
+  background-color: #d3cd96;
+  color: #d3cd96;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "sans-serif";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #184579;
+  width: 90vw;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.underline{
+  width: 70vw;
+  height: 2px;
+  background-color: #d3cd96;
+}
+
+.head {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+label {
+  margin: 10px;
+}
+/* bmi */
+#BMICalculator {
+  font-family: "sans-serif";
+}
+
+.bmislider {
+  margin: 5px;
+  width: 70%;
+  height: 10px;
+  background-color: #184579cc;
+}
+
+.bmislider::-moz-range-progress {
+  border-radius: 2px;
+  height: 10px;
+  background-color: #d45695cc;
+}
+.bmislider::-moz-range-track {
+  border-radius: 2px;
+  height: 5px;
+  background-color: #d3cd9699;
+}
+.bmislider::-moz-range-thumb{
+    border-radius: 25%;
+    background: #d3cd96;
+}
+.result {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* music player */
+
+#musicPlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.playerWraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls > i {
+  margin: 10px;
+  font-size: larger;
+}
+
+/* countdown */
+#countDown {
+  padding: 5px;
+}
+
+#countDown > .main {
+  display: flex;
+  flex-direction: row;
+}
+
+#countDown > .main > .box {
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box > div {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* form validation */
+
+form {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form > input {
+  margin: 10px;
+  width: 100%;
+  border: none;
+  background-color: #d3cd96aa;
+  height: 20px;
+  border-radius: 3px;
+}
+button {
+  width: 100%;
+  margin: 10px;
+}
+.error {
+  font-weight: bolder;
+  color: #c07a9d;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  height: 25px;
+  margin: 20px;
+  background-color: #62b641cc;
+  color: #184579;
+  font-weight: 700;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  form {
+    width: 70vw;
+  }
+  img {
+    width: 90%;
+  }
+  h2{
+    font-size: large;
+  }
+}

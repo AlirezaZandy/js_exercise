@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="https://kit.fontawesome.com/662012a601.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container" id="BMICalculator">
+        <div class="head">
+            <h1 class="title">BMI Calculation</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="main">
+            <input class="bmislider" type="range" id="weight" name="weight" min="1" max="250"
+                oninput="sliderchange(this)" />
+            <label for="weight">Weight (kg):</label>
+            <input class="bmislider" type="range" id="height" name="height" min="100" max="250"
+                oninput="sliderchange(this)" />
+            <label for="height">Height (cm):</label>
+            <div class="result">
+                <h2 id="bmivalue">BMI:</h2>
+                <h2 id="bmistatus">Status: <span></span></h2>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="musicPlayer">
+        <div class="head">
+            <h1 class="title">Music Player</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="main">
+            <div class="playerWraper">
+                <img src="https://alinabizadeh1913.github.io/Javascript_Exercise/src/image/img1.jpg" alt=""
+                    id="tumbnail">
+                <h2 id="title">01 Hearts Entwined</h2>
+                <audio id="audio"
+                    src="https://alinabizadeh1913.github.io/Javascript_Exercise/src/media/01 Hearts Entwined.mp3"></audio>
+                <div class="audio-track">
+                    <div class="time"></div>
+                </div>
+                <div class="controls">
+                    <i id="repeat" class="fa-solid fa-rotate-right"></i>
+                    <i id="prev" class="fa-solid fa-backward-step"></i>
+                    <i id="play" class="fa-solid fa-play"></i>
+                    <i id="next" class="fa-solid fa-forward-step"></i>
+                    <i id="shuffle" class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="countDown">
+        <div class="head">
+            <h1 class="title">Countdown Timer</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="main">
+            <div class="timer box">
+                <div class="timer label">Days</div>
+                <div id="day"></div>
+            </div>
+            <div class="timer box">
+                <div class="timer label">Hours</div>
+                <div id="hour"></div>
+            </div>
+            <div class="timer box">
+                <div class="timer label">Minutes</div>
+                <div id="minute"></div>
+            </div>
+            <div class="timer box">
+                <div class="timer label">Hours</div>
+                <div id="second"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="fvalid">
+        <div class="head">
+            <h1 class="title">Form Validation</h1>
+            <div class="hint"></div>
+            <div class="underline"></div>
+        </div>
+        <div class="main">
+            <form id="signUp" action>
+                <input type="text" id="user" placeholder="Username">
+                <div class="error" id="userErr"></div>
+                <input type="email" id="email" placeholder="Email address">
+                <div class="error" id="emailErr"></div>
+                <input type="password" id="pass" placeholder="Password">
+                <div class="error" id="passErr"></div>
+                <input type="password" id="repass" placeholder="Repeat password">
+                <div class="error" id="repassErr"></div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
