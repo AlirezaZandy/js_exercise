@@ -67,6 +67,10 @@ label {
   font-family: "sans-serif";
 }
 
+#BMICalculator .main{
+  width: 90%;
+}
+
 .bmislider {
   margin: 5px;
   width: 70%;
@@ -173,6 +177,9 @@ button {
   font-weight: 700;
 }
 
+button:hover{
+  background-color: #d45695;
+}
 /* responsive */
 @media screen and (max-width: 600px) {
   form {
